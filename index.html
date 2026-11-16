@@ -105,8 +105,19 @@ footer{padding:40px 0;background:#0c2419;color:#a9bdb2}.footer-grid{display:flex
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video-caption{text-align:center;max-width:760px;margin:22px auto 0;color:var(--muted)}
 
+
+/* Refinamento editorial: clareza científica e apresentação pública */
+:focus-visible{outline:3px solid #c08327;outline-offset:4px}
+html{scroll-padding-top:155px}
+.tab[aria-current="page"]{background:var(--green);border-color:var(--green);color:#fff}
+.btn,.tab{transition:background-color .18s ease,transform .18s ease}
+@media(hover:hover){.btn:hover{transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media(max-width:560px){h1{font-size:clamp(2.4rem,10.5vw,3.7rem);line-height:1.06;overflow-wrap:break-word}.hero-grid{gap:26px}.hero-card img{max-height:340px}.section-head{margin-bottom:28px}.tabbar-inner{padding:8px 0}}
+
+.evidence-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}.evidence-strip>div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:flex;flex-direction:column;gap:4px;box-shadow:0 5px 22px rgba(16,45,32,.04)}.evidence-strip strong{font-size:clamp(1.45rem,2.8vw,2.1rem);color:var(--dark);line-height:1.2}.evidence-strip span{color:#53665d;font-size:.9rem}.evidence-note{font-size:.85rem;color:#53665d;margin-top:12px}@media(max-width:650px){.evidence-strip{grid-template-columns:1fr;gap:9px}.evidence-strip>div{padding:13px 16px}.evidence-note{line-height:1.5}}
 </style></head><body><header><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">🌱</span>Pavers <em>Sustentáveis</em></a></div></header><nav class="tabbar" aria-label="Abas de navegação"><div class="container tabbar-inner">
-<a class="tab" href="index.html">Início</a><a class="tab" href="beneficios.html">Benefícios</a><a class="tab" href="ods.html">ODS</a><a class="tab" href="abnt.html">Normas ABNT</a><a class="tab" href="projeto-de-lei.html">Projeto de Lei</a><a class="tab" href="tintura.html">Tintura de Cajueiro Roxo</a><a class="tab" href="galeria.html">Galeria</a><a class="tab" href="equipe.html">Nossa Equipe</a>
+<a class="tab" aria-current="page" href="index.html">Início</a><a class="tab" href="beneficios.html">Benefícios</a><a class="tab" href="ods.html">ODS</a><a class="tab" href="abnt.html">Normas ABNT</a><a class="tab" href="projeto-de-lei.html">Projeto de Lei</a><a class="tab" href="tintura.html">Tintura de Cajueiro Roxo</a><a class="tab" href="galeria.html">Galeria</a><a class="tab" href="equipe.html">Nossa Equipe</a>
 </div></nav><main id="inicio"><section class="hero">
 <div class="container hero-grid">
 <div class="reveal">
@@ -120,6 +131,7 @@ footer{padding:40px 0;background:#0c2419;color:#a9bdb2}.footer-grid{display:flex
 <span class="mock-label">Fotografia real • protótipo em desenvolvimento</span>
 </div>
 </div>
+<div class="container" aria-label="Indicadores do projeto"><div class="evidence-strip"><div><strong>15%</strong><span>pó da casca no traço atual</span></div><div><strong>9,10 MPa</strong><span>resistência medida informada</span></div><div><strong>R$ 0,72</strong><span>custo estimado por unidade</span></div></div><p class="evidence-note">Protótipo em desenvolvimento. A meta de 35–39 MPa ainda não foi alcançada; os indicadores não representam certificação para uso comercial.</p></div>
 </section><section id="ideia">
 <div class="container">
 <div class="section-head center"><span class="kicker">Por que existe?</span><h2>Uma pergunta simples deu início à pesquisa.</h2><p>O que poderia acontecer se uma parte desse resíduo ganhasse uma nova função, inclusive pensando no futuro da nossa região produtora de castanha?</p></div>
