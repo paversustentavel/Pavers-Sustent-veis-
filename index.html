@@ -105,21 +105,33 @@ footer{padding:40px 0;background:#0c2419;color:#a9bdb2}.footer-grid{display:flex
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video-caption{text-align:center;max-width:760px;margin:22px auto 0;color:var(--muted)}
 
+
+/* Refinamento editorial: clareza científica e apresentação pública */
+:focus-visible{outline:3px solid #c08327;outline-offset:4px}
+html{scroll-padding-top:155px}
+.tab[aria-current="page"]{background:var(--green);border-color:var(--green);color:#fff}
+.btn,.tab{transition:background-color .18s ease,transform .18s ease}
+@media(hover:hover){.btn:hover{transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media(max-width:560px){h1{font-size:clamp(2.4rem,10.5vw,3.7rem);line-height:1.06;overflow-wrap:break-word}.hero-grid{gap:26px}.hero-card img{max-height:340px}.section-head{margin-bottom:28px}.tabbar-inner{padding:8px 0}}
+
+.evidence-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}.evidence-strip>div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:flex;flex-direction:column;gap:4px;box-shadow:0 5px 22px rgba(16,45,32,.04)}.evidence-strip strong{font-size:clamp(1.45rem,2.8vw,2.1rem);color:var(--dark);line-height:1.2}.evidence-strip span{color:#53665d;font-size:.9rem}.evidence-note{font-size:.85rem;color:#53665d;margin-top:12px}@media(max-width:650px){.evidence-strip{grid-template-columns:1fr;gap:9px}.evidence-strip>div{padding:13px 16px}.evidence-note{line-height:1.5}}
 </style></head><body><header><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">🌱</span>Pavers <em>Sustentáveis</em></a></div></header><nav class="tabbar" aria-label="Abas de navegação"><div class="container tabbar-inner">
-<a class="tab" href="index.html">Início</a><a class="tab" href="beneficios.html">Benefícios</a><a class="tab" href="ods.html">ODS</a><a class="tab" href="abnt.html">Normas ABNT</a><a class="tab" href="projeto-de-lei.html">Projeto de Lei</a><a class="tab" href="tintura.html">Tintura de Cajueiro Roxo</a><a class="tab" href="galeria.html">Galeria</a><a class="tab" href="equipe.html">Nossa Equipe</a>
+<a class="tab" aria-current="page" href="index.html">Início</a><a class="tab" href="beneficios.html">Benefícios</a><a class="tab" href="ods.html">ODS</a><a class="tab" href="abnt.html">Normas ABNT</a><a class="tab" href="projeto-de-lei.html">Projeto de Lei</a><a class="tab" href="tintura.html">Tintura de Cajueiro Roxo</a><a class="tab" href="galeria.html">Galeria</a><a class="tab" href="equipe.html">Nossa Equipe</a>
 </div></nav><main id="inicio"><section class="hero">
 <div class="container hero-grid">
 <div class="reveal">
 <span class="eyebrow">♻️ Ciência • Inovação • Sustentabilidade</span>
-<h1>Seja bem-vindo ao nosso projeto <span>Pavers Sustentáveis</span></h1>
-<p class="hero-copy">Seja bem-vindo ao nosso projeto <strong>Pavers Sustentáveis</strong>. Investigamos o aproveitamento da casca da castanha de caju na produção de pavers, unindo pesquisa, experimentação e uma solução pensada para nossa comunidade.</p>
-<div class="buttons"><a class="btn btn-primary" href="#ideia">Conheça o projeto ↓</a><a class="btn btn-secondary" href="#processo">Ver o processo</a></div>
+<h1>Da casca da castanha de caju a novas possibilidades para a <span>construção sustentável</span></h1>
+<p class="hero-copy">Somos uma equipe de estudantes que investiga o aproveitamento do pó da casca da castanha de caju torrada na produção de pavers. Nosso projeto une pesquisa, experimentação e compromisso com a comunidade. O material ainda está em desenvolvimento e passa por avaliações técnicas.</p>
+<div class="buttons"><a class="btn btn-primary" href="#resultados">Conheça os resultados ↓</a><a class="btn btn-secondary" href="galeria.html">Veja nossos registros</a></div>
 </div>
 <div class="hero-card reveal">
-<img alt="Protótipos de pavers sustentáveis desenvolvidos pelo projeto" class="prototype-image" src="1000727625.jpg"/>
-<span class="mock-label">Protótipo • projeto em desenvolvimento</span>
+<img alt="Paver experimental desenvolvido pela equipe Pavers Sustentáveis" class="prototype-image" src="paver-prototipo.jpg" width="1125" height="1500" fetchpriority="high"/>
+<span class="mock-label">Fotografia real • protótipo em desenvolvimento</span>
 </div>
 </div>
+<div class="container" aria-label="Indicadores do projeto"><div class="evidence-strip"><div><strong>15%</strong><span>pó da casca no traço atual</span></div><div><strong>9,10 MPa</strong><span>resistência medida informada</span></div><div><strong>R$ 0,72</strong><span>custo estimado por unidade</span></div></div><p class="evidence-note">Protótipo em desenvolvimento. A meta de 35–39 MPa ainda não foi alcançada; os indicadores não representam certificação para uso comercial.</p></div>
 </section><section id="ideia">
 <div class="container">
 <div class="section-head center"><span class="kicker">Por que existe?</span><h2>Uma pergunta simples deu início à pesquisa.</h2><p>O que poderia acontecer se uma parte desse resíduo ganhasse uma nova função, inclusive pensando no futuro da nossa região produtora de castanha?</p></div>
@@ -158,7 +170,7 @@ footer{padding:40px 0;background:#0c2419;color:#a9bdb2}.footer-grid{display:flex
 <div class="stat"><strong>15%</strong><span>porcentagem de casca utilizada no traço atual do projeto.</span></div>
 <div class="stat"><strong>R$ 0,72</strong><span>custo estimado por unidade informado pela equipe; não representa preço de venda.</span></div>
 </div>
-<div class="quote">A meta de resistência de 35–39 MPa ainda não foi atingida. O projeto está em fase experimental e os resultados serão atualizados após novos ensaios. A aplicação em pavimentação depende de avaliação técnica e atendimento aos requisitos aplicáveis.</div>
+<div class="quote">A meta de resistência de 35–39 MPa ainda não foi atingida. O projeto está em fase experimental e os resultados serão atualizados após novos ensaios. A aplicação em pavimentação depende de avaliação técnica e atendimento aos requisitos aplicáveis. <a href="galeria.html">Veja os registros reais da fabricação, dos ensaios e da calçada experimental.</a></div>
 </div>
 </section><section class="video-section" id="aprenda">
 <div class="container">
